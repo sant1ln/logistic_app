@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TableComponent } from './components/table/table.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
