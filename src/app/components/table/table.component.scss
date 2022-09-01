@@ -25,6 +25,10 @@ thead {
 
 tbody {
 
+  tr:nth-child(odd){
+    background-color: $odd-color;
+  }
+
   td {
     padding: 0 5px;
   }
