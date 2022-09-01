@@ -1,0 +1,20 @@
+@import '../../../styles.scss';
+
+.inner-login{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 50px;
+  background-color: $header-color;
+  color: $header-font-color;
+
+
+  .fa-icon{
+    color: white;
+  }
+
+  img{
+    width: 12px;
+  }
+}
