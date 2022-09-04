@@ -2,16 +2,20 @@
 
 *{
   font-family: 'Roboto', sans-serif;
-  font-family: 'Secular One', sans-serif;
 }
 
 body{
   margin: 0;
+  font-size: 62.5%;
 }
 
 /* Variables */
 
 $primary-color: #24292f;
+$secondary-color: #FFF;
+$tertiary-color: #e0e0ee;
 $primary-font-color: #fff;
+$action-color: #76ce43;
+
 
 $odd-color: #efeeee;

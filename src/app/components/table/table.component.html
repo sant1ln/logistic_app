@@ -1,12 +1,30 @@
+<section class="pre-table">
+  <h1>Total Sales</h1>
+  <p class="pre-table-total-records">Total records: <span>7</span></p>
+  <div class="pre-table-info">
+    <p>Page 1 from 10</p>
+    <p class="export">
+      <span> Export data </span>
+      <fa-icon [icon]="fileEXCEL"></fa-icon>
+    </p>
+  </div>
+</section>
 <table cellspacing="0">
   <thead>
     <tr>
-      <th>Date   <fa-icon [icon]="sort"></fa-icon></th>
-      <th>Order ID  <fa-icon [icon]="sort"></fa-icon></th>
-      <th>Name  <fa-icon [icon]="sort"></fa-icon></th>
-      <th>Price  <fa-icon [icon]="sort"></fa-icon></th>
-      <th>Quantity  <fa-icon [icon]="sort"></fa-icon></th>
-      <th>Total  <fa-icon [icon]="sort"></fa-icon></th>
+      <th>Date <fa-icon [icon]="sort"></fa-icon>
+      </th>
+      <th>Order ID <fa-icon [icon]="sort"></fa-icon>
+      </th>
+      <th>Name <fa-icon [icon]="sort"></fa-icon>
+      </th>
+      <th>Price <fa-icon [icon]="sort"></fa-icon>
+      </th>
+      <th>Quantity <fa-icon [icon]="sort"></fa-icon>
+      </th>
+      <th>Total <fa-icon [icon]="sort"></fa-icon>
+      </th>
+      <th>Print</th>
     </tr>
   </thead>
   <tbody>
@@ -17,6 +35,10 @@
       <td class="column4">$999.00</td>
       <td class="column5">1</td>
       <td class="column6">$999.00</td>
+      <td class="print_icon">
+        <fa-icon [icon]="filePDF" title="print"></fa-icon>
+        <fa-icon [icon]="edit" title="print"></fa-icon>
+      </td>
     </tr>
     <tr>
       <td class="column1">2017-09-28 05:57</td>
@@ -25,6 +47,9 @@
       <td class="column4">$756.00</td>
       <td class="column5">1</td>
       <td class="column6">$756.00</td>
+      <td class="print_icon">
+        <fa-icon [icon]="filePDF" title="print"></fa-icon>
+      </td>
     </tr>
     <tr>
       <td class="column1">2017-09-26 05:57</td>
@@ -33,6 +58,9 @@
       <td class="column4">$22.00</td>
       <td class="column5">2</td>
       <td class="column6">$44.00</td>
+      <td class="print_icon">
+        <fa-icon [icon]="filePDF" title="print"></fa-icon>
+      </td>
     </tr>
     <tr>
       <td class="column1">2017-09-25 23:06</td>
@@ -41,6 +69,9 @@
       <td class="column4">$10.00</td>
       <td class="column5">3</td>
       <td class="column6">$30.00</td>
+      <td class="print_icon">
+        <fa-icon [icon]="filePDF" title="print"></fa-icon>
+      </td>
     </tr>
     <tr>
       <td class="column1">2017-09-24 05:57</td>
@@ -49,6 +80,9 @@
       <td class="column4">$199.00</td>
       <td class="column5">6</td>
       <td class="column6">$1494.00</td>
+      <td class="print_icon">
+        <fa-icon [icon]="filePDF" title="print"></fa-icon>
+      </td>
     </tr>
     <tr>
       <td class="column1">2017-09-23 05:57</td>
@@ -57,6 +91,9 @@
       <td class="column4">$699.00</td>
       <td class="column5">1</td>
       <td class="column6">$699.00</td>
+      <td class="print_icon">
+        <fa-icon [icon]="filePDF" title="print"></fa-icon>
+      </td>
     </tr>
     <tr>
       <td class="column1">2017-09-22 05:57</td>
@@ -65,6 +102,9 @@
       <td class="column4">$2199.00</td>
       <td class="column5">1</td>
       <td class="column6">$2199.00</td>
+      <td class="print_icon">
+        <fa-icon [icon]="filePDF" title="print"></fa-icon>
+      </td>
     </tr>
     <tr>
       <td class="column1">2017-09-21 05:57</td>
@@ -73,6 +113,9 @@
       <td class="column4">$999.00</td>
       <td class="column5">1</td>
       <td class="column6">$999.00</td>
+      <td class="print_icon">
+        <fa-icon [icon]="filePDF" title="print"></fa-icon>
+      </td>
     </tr>
   </tbody>
 </table>

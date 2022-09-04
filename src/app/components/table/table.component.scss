@@ -1,7 +1,51 @@
 @import '../../../styles.scss';
 
+.pre-table {
+  width: 100%;
+
+  h1 {
+    font-size: 1.6rem;
+    margin: 0.5px 0;
+  }
+
+  &-total-records {
+    font-size: 1.2rem;
+    margin: 5px 0 30px 0;
+  }
+
+  &-info {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+
+
+    p {
+      margin: 2px 0 10px 0;
+    }
+
+    .export {
+      text-decoration: underline;
+      cursor: pointer;
+
+      &:hover{
+        color: $action-color;
+      }
+
+      fa-icon{
+        text-decoration: underline;
+      }
+
+      span {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+
 table {
-  width: 90%;
+  font-size: 1rem;
+  width: 100%;
   height: 500px;
   border-collapse: collapse;
   border-radius: 5px;
@@ -15,7 +59,7 @@ thead {
   height: 45px;
   background-color: $primary-color;
   color: $primary-font-color;
-  
+
 
   th {
     padding: 0 5px;
@@ -25,11 +69,22 @@ thead {
 
 tbody {
 
-  tr:nth-child(odd){
+  tr:nth-child(odd) {
     background-color: $odd-color;
   }
 
   td {
     padding: 0 5px;
+  }
+}
+
+.print_icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  &:hover{
+    color: $action-color;
   }
 }
