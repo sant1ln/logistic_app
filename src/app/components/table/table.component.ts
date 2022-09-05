@@ -3,6 +3,7 @@ import { faSort } from '@fortawesome/free-solid-svg-icons';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { faFileExcel } from '@fortawesome/free-solid-svg-icons';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';
+import { SalesService } from 'src/app/services/sales.service';
 
 @Component({
   selector: 'app-table',
@@ -11,14 +12,24 @@ import { faEdit } from '@fortawesome/free-solid-svg-icons';
 })
 export class TableComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private salesSerive : SalesService
+  ) { }
 
   sort = faSort;
   edit= faEdit;
   filePDF = faFilePdf;
   fileEXCEL = faFileExcel;
 
+  public sales: any = []
+
   ngOnInit(): void {
+    this.getSales()
   }
+
+  getSales(){
+    this.sales = this.salesSerive.setTotalSale()
+  }
+
 
 }
