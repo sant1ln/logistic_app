@@ -1,6 +1,6 @@
 @import '../../../styles.scss';
 
-.modal-container{
+.modal-container {
   font-size: 1.2rem;
   display: grid;
   place-content: center;
@@ -9,12 +9,12 @@
   position: absolute;
   background-color: rgba($color: #FFF, $alpha: .9);
 
-  .modal{
+  .modal {
     display: flex;
     flex-direction: column;
     width: 55vw;
 
-    &-header{
+    &-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -24,39 +24,50 @@
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
 
-      h2{
-        margin: 5px;  
+      h2 {
+        margin: 5px;
       }
     }
 
-    form{
+    form {
       display: flex;
       flex-wrap: wrap;
+      border: 1px solid $primary-color;
 
-      .grid{
-        width: 50%;
+      .grid {
+        width: 50%;        
       }
 
-      .action{
+      label{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 15px 5px;
+        input{
+          width: 90%;
+        }
+      }
+
+      .action {
         display: flex;
         align-items: center;
         justify-content: flex-end;
         width: 100%;
         height: 80px;
 
-        button{
+        button {
           width: 20%;
-          height: 25px;          
+          height: 25px;
           margin: 0 10px;
 
-          &#edit{
+          &#edit {
             background-color: $primary-color;
             color: $primary-font-color;
             border: none;
             border-radius: 5px;
           }
 
-          &#cancel{
+          &#cancel {
             background-color: transparent;
             border-radius: 5px;
           }
@@ -66,4 +77,3 @@
   }
 
 }
-
