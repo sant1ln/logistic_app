@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TableComponent } from './components/table/table.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TableComponent
+    TableComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

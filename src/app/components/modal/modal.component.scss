@@ -1,0 +1,69 @@
+@import '../../../styles.scss';
+
+.modal-container{
+  font-size: 1.2rem;
+  display: grid;
+  place-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba($color: #FFF, $alpha: .9);
+
+  .modal{
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+
+    &-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $primary-color;
+      color: $primary-font-color;
+      padding: 0 10px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+
+      h2{
+        margin: 5px;  
+      }
+    }
+
+    form{
+      display: flex;
+      flex-wrap: wrap;
+
+      .grid{
+        width: 50%;
+      }
+
+      .action{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        height: 80px;
+
+        button{
+          width: 20%;
+          height: 25px;          
+          margin: 0 10px;
+
+          &#edit{
+            background-color: $primary-color;
+            color: $primary-font-color;
+            border: none;
+            border-radius: 5px;
+          }
+
+          &#cancel{
+            background-color: transparent;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+
+}
+

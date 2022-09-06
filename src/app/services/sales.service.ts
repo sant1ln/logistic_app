@@ -49,25 +49,8 @@ export class SalesService implements OnInit {
     "name": "Wine - Zinfandel California 2002",
     "price": 38.84,
     "quantity": 4
-  }, {
-    "date": "2022-05-08",
-    "order_id": 8936,
-    "name": "Remy Red",
-    "price": 37.58,
-    "quantity": 1
-  }, {
-    "date": "2022-07-26",
-    "order_id": 2859,
-    "name": "Miso Paste White",
-    "price": 17.43,
-    "quantity": 5
-  }, {
-    "date": "2021-12-05",
-    "order_id": 7725,
-    "name": "Nestea - Iced Tea",
-    "price": 12.09,
-    "quantity": 3
-  }]
+  },
+  ]
 
   ngOnInit(): void {
     this.setTotalSale()
