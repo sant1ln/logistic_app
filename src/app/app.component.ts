@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Sales } from './model/sales.model';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +12,9 @@ export class AppComponent {
   
   doSomething(){
     this.title = 'abdc'
+  }
+
+  openModal(event: Sales){
+    console.log(event)
   }
 }

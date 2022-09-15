@@ -37,7 +37,7 @@
       <td>{{sale?.total}}</td>
       <td class="print_icon">
         <fa-icon [icon]="filePDF" title="print"></fa-icon>
-        <fa-icon [icon]="edit" title="print"></fa-icon>
+        <fa-icon (click)="handleClick(sale)" [icon]="edit" title="edit"></fa-icon>
       </td>
     </tr>    
   </tbody>
