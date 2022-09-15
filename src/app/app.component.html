@@ -1,4 +1,4 @@
-<app-modal *ngIf="generalService.showModal"></app-modal>
+<app-modal *ngIf="generalService.showModal" [sale_Selected]="saleSelected" ></app-modal>
 <app-header></app-header>
 <main>
   <app-table (openModal)="openModal($event)" style="width: 90%;"></app-table>

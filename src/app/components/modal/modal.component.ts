@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import { Sales } from 'src/app/model/sales.model';
+import { GeneralService } from 'src/app/services/general.service';
 
 
 @Component({
@@ -10,8 +11,11 @@ import { Sales } from 'src/app/model/sales.model';
 })
 export class ModalComponent implements OnInit {
 
-  constructor() { }
-  @Input() openModal: Sales = {
+  constructor(
+    public generalServices: GeneralService
+  ) { }
+
+  @Input() sale_Selected: Sales = {
     "date": "",
     "order_id": 0,
     "name": "",
@@ -24,6 +28,9 @@ export class ModalComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  
+  closeModal(){
+    console.log('x')
+    this.generalServices.showModal = false;
+  }  
 
 }

@@ -13,14 +13,17 @@ export class AppComponent {
     public generalService: GeneralService
   ){} 
 
-  title = 'logistic_app';  
+  public saleSelected: Sales = {
+    "date": "123",
+    "order_id": 1,
+    "name": "Product",
+    "price": 110,
+    "quantity": 1
+  };
   
-  doSomething(){
-    this.title = 'abdc'
-  }
-
   openModal(event: Sales){
-    console.log(event)
     this.generalService.showModal = true;
+    this.saleSelected = event;
+    console.log(this.saleSelected)
   }
 }
