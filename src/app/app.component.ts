@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Sales } from './model/sales.model';
+import { GeneralService } from './services/general.service';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,12 @@ import { Sales } from './model/sales.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'logistic_app';
   
+  constructor(
+    public generalService: GeneralService
+  ){} 
+
+  title = 'logistic_app';  
   
   doSomething(){
     this.title = 'abdc'
@@ -16,5 +21,6 @@ export class AppComponent {
 
   openModal(event: Sales){
     console.log(event)
+    this.generalService.showModal = true;
   }
 }
