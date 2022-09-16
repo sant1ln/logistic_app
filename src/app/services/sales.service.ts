@@ -65,7 +65,6 @@ export class SalesService implements OnInit {
       }
     })
 
-    console.log(this.total_sales)
     return this.total_sales;
   }
 

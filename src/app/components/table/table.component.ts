@@ -19,12 +19,10 @@ export class TableComponent implements OnInit {
     private salesSerive : SalesService
   ) { }
 
-  sort = faSort;
-  edit= faEdit;
-  filePDF = faFilePdf;
-  fileEXCEL = faFileExcel;
-
-
+  public sort = faSort;
+  public edit= faEdit;
+  public filePDF = faFilePdf;
+  public fileEXCEL = faFileExcel;
   public sales: any = []
 
   ngOnInit(): void {
@@ -32,6 +30,7 @@ export class TableComponent implements OnInit {
   }
 
   handleClick(sale:Sales){
+    console.log(sale)
     this.openModal.emit(sale)
   }
 

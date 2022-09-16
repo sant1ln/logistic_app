@@ -4,34 +4,33 @@
       <h2>Edit/View</h2>
       <fa-icon (click)="closeModal()" [icon]="exit"></fa-icon>
     </div>
-    <form>
-      {{sale_Selected | json}}
+    <form [formGroup]="form">
       <div class="grid">
         <label for="date">
           Date
-          <input type="date" name="date" id="">
+          <input type="date" formControlName="date" name="date">
         </label>
         <label for="order_id">
           Order Id
-          <input type="number" name="order_id" id="">
+          <input type="number" formControlName="order_id" name="order_id">
         </label>
         <label for="name">
           Name
-          <input type="text" name="name">
+          <input type="text" formControlName="name" name="name">
         </label>
       </div>
       <div class="grid">
         <label for="price">
           Price
-          <input type="number" name="price">
+          <input type="number" formControlName="price" name="price">
         </label>
         <label for="quantity">
           Quantity
-          <input type="number" name="quantity">
+          <input type="number" formControlName="quantity" name="quantity">
         </label>
         <label for="total">
           Total
-          <input type="number" name="total">
+          <input type="text" formControlName="total" name="total">
         </label>
       </div>
       <div class="action">

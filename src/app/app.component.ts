@@ -18,12 +18,12 @@ export class AppComponent {
     "order_id": 1,
     "name": "Product",
     "price": 110,
-    "quantity": 1
+    "quantity": 1,
+    "total": 0
   };
   
   openModal(event: Sales){
-    this.generalService.showModal = true;
     this.saleSelected = event;
-    console.log(this.saleSelected)
+    this.generalService.showModal = true;
   }
 }
